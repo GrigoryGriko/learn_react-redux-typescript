@@ -28,3 +28,6 @@ export const fetchTodo = (page = 1, limit = 10) => {
     }
   }
 }
+export function setTodoPage(page: number): TodoAction {
+  return {type: TodoActionTypes.SET_TODO_PAGE, payload: page}
+}
