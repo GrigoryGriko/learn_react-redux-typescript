@@ -21,5 +21,8 @@ interface FetchUsersErrorAction {
   type: UserActionTypes.FETCH_USERS_ERROR;
   payload: string;
 }
-export type UserAction = FetchUsersAction | FetchUsersSuccessAction | FetchUsersErrorAction;
+export type UserAction = 
+  FetchUsersAction
+  | FetchUsersSuccessAction
+  | FetchUsersErrorAction;
   
