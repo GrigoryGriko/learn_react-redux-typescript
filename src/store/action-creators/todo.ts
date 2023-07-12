@@ -19,7 +19,7 @@ export const fetchTodo = (page = 1, limit = 10) => {
       )
       setTimeout(() => {
         dispatch({type: TodoActionTypes.FETCH_TODOS_SUCCESS, payload: res.data}) 
-      }, 500) 
+      }, 50) 
     } catch (e) {
       dispatch({
         type: TodoActionTypes.FETCH_TODOS_ERROR,

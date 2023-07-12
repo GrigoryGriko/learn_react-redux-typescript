@@ -16,7 +16,7 @@ export const fetchUsers = () => {
         dispatch({
           type: UserActionTypes.FETCH_USERS_SUCCESS, payload: res.data,
         })
-      }, 500)
+      }, 50)
     } catch (e) {
       dispatch({
         type: UserActionTypes.FETCH_USERS_ERROR,
